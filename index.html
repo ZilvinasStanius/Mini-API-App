@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1>Search your dish!</h1>
+      </div>
+    </header>
+    <div class="container">
+      <label>
+        <select
+          name="dish"
+          id="dish"
+        ></select>
+        <button class="btn">Get Dish!</button>
+        <button class="show-all-btn">Show all recipes</button>
+      </label>
+      <div class="modal-overlay">
+        <div class="modal-card">
+          <img
+            src="https://www.themealdb.com/images/media/meals/qtqvys1468573168.jpg"
+            alt="Dish Image"
+          />
+          <div class="content">
+            <h2>Dish Name</h2>
+            <p>Ingredients: Salt, Pepper, Olive Oil</p>
+            <p>Cooking Time: 30 minutes</p>
+            <p>Difficulty: Easy</p>
+            <button class="close-btn">Close</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="dish-container"></div>
+    </div>
+
+    <script src="components.js"></script>
+    <script src="filterDish.js"></script>
+    <script src="searchDish.js"></script>
+    <script src="generateHtml.js"></script>
+    <script src="module.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
