@@ -2,15 +2,14 @@
 const modalElement = document.querySelector('.modal-overlay');
 function getAllImages(recipes) {
   const imagesElement = document.querySelectorAll('.img-div');
-  //   console.log(imagesElement);
+
   imagesElement.forEach((img) =>
     img.addEventListener('click', (event) => {
-      console.log(event);
       // We taking the curent image atributes data-id value
       const idOfRecipe = +event.currentTarget.getAttribute('data-id');
       //   console.log(typeof idOfRecipe);
       const filteredRecipe = recipes.find((recipe) => recipe.id === idOfRecipe);
-      console.log(filteredRecipe);
+
       modalElement.style.setProperty('display', 'flex');
       generateRecipeModule(filteredRecipe);
       closeModule();
